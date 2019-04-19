@@ -1,0 +1,20 @@
+{
+  "name": "cosmin",
+  "version": "1.0.0",
+  "description": "Proiectul consta intr o platforma de genul \"rent my car\", in care lumea se autentifica si isi poate\r lista masina pentru a fi inchiriata pentru o perioada determinata sau poate inchiria o masina din cele listate.\r Momentan este creata doar pagina principala si pagina de Sign-up, urmand ca partea de autentificare sa fie realizata \r pe pagina principala folosind java script.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel -p 1000 watch index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristidrg/temalucosmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristidrg/temalucosmin/issues"
+  },
+  "homepage": "https://github.com/cristidrg/temalucosmin#readme"
+}

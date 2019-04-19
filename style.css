@@ -1,0 +1,259 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.font-heading-1 {
+    font-size: 2.5rem;
+}
+
+.font-heading-2 {
+    font-size: 1.7rem;
+}
+
+.font-heading-3 {
+    font-size: 1.4rem;
+}
+
+.font-heading-4 {
+    font-size: 1rem;
+}
+
+.green {
+    color: #25bb36;
+}
+
+.welcome {
+    background: url(./hero-splash.png) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: bottom 150px left 0;
+
+    height: 600px;
+    position: relative;
+}
+
+.page-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome__navigation {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.welcome__logo {
+    font-weight: 800;
+    letter-spacing: -1.3px;
+}
+
+.welcome__links {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    color: #474748;
+}
+
+.welcome__links > li {
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.welcome__links > li:hover {
+    color: #25bb36;
+}
+
+.welcome__links > .welcome__register {
+    color: white;
+    background-color: #25bb36;
+    padding: 10px 25px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border: 1px solid #25bb36;
+    transition: all 0.2s ease;
+    margin-left: 15px;
+}
+
+
+.welcome__links > .welcome__register:hover {
+    background-color: white;
+}
+
+.welcome__content {
+    margin-top: 80px;
+    display: flex;
+}
+
+.welcome__header {
+    margin-top: 110px;
+    font-weight: 800;
+}
+
+.welcome__sub-header {
+    margin-top: 15px;
+}
+
+.welcome__form {
+    margin-left: auto;
+    margin-right: 15px;
+    background-color: white;
+    padding: 20px 15px;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.welcome__form > p {
+    display: block;
+}
+
+.welcome__form-input {
+    width: calc(100% - 55px);
+    border: 0;
+    border-bottom: 1px solid #25bb36;
+    margin-top: 30px;
+}
+
+.welcome__form-name {
+    display: block;
+}
+
+.welcome__form-car-icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.welcome__form-input::placeholder {
+    color: #474748;
+}
+
+.welcome__form-price {
+    display: flex;
+    margin-top: 45px;
+}
+
+#welcome__form-price-input {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#welcome__form-price-input .noUi-connect {
+    background: #25bb36;
+}
+
+#welcome__form-price-input .noUi-tooltip {
+    font-size: 0.7rem;
+    padding: 4px;
+}
+
+.welcome__form-submit {
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.welcome__form-submit-button {
+    background: #25bb36;
+    color: white;
+    text-decoration: none;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+
+.welcome__map-stats {
+    z-index: 99;
+    position: absolute;
+    bottom: -18px;
+    font-size: 1.7rem;
+    padding: 8px 20px;
+    color: white;
+    background: #25bb36;
+    border-radius: 15px;
+    left: calc(50% - 160px);
+    margin: 0 auto;
+}
+
+#map {
+    height: 400px;
+}
+
+.carlist {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carlist__title {
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.carlist-entry {
+    width: 330px;
+    position: relative;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.carlist-entry:hover .carlist-entry__image {
+    transform: translateY(-5px);
+}
+
+.carlist-entry:hover .carlist-entry__price {
+    transform: translateY(-5px);
+}
+
+.carlist-entry__image {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.carlist-entry__price {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: #25bb36;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.carlist-entry__details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.carlist-entry__book {
+    margin-left: auto;
+    color: white;
+    background-color: #25bb36;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.carlist-entry__title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.carlist-entry__features {
+    text-transform: uppercase;
+    display: flex;
+}
+
+.carlist-entry__features > li {
+    padding-right: 10px;
+}
+
+.footer {
+    border-top: 4px solid #25bb36;
+    height: 100px;
+}
