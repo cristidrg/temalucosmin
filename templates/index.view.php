@@ -42,7 +42,7 @@
                         <h2 class="welcome__sub-header"><span class="green">250</span> users are searching right now!</h2>            
                 </div>
                 <div class="welcome__form">
-                    <p class="font-heading-2">Search cars</p>
+                    <p class="font-heading-2 font-weight-700">Search cars</p>
                     <div>
                     <div class="welcome__form-name">
                         <img class="welcome__form-car-icon" src="https://image.flaticon.com/icons/svg/335/335049.svg">
@@ -215,7 +215,6 @@ noUiSlider.create(range, {
         'min': 0,
         'max': 2000
     },
-
     step: 100,
     start: [0, 2000],
     margin: 100,
@@ -293,8 +292,6 @@ document.querySelector('#login').addEventListener('click', function() {
 
 <script>
 var registerModal = new tingle.modal({
-    footer: true,
-    stickyFooter: false,
     closeMethods: ['overlay', 'button', 'escape'],
     closeLabel: "Close",
     cssClass: ['login-modal'],
@@ -302,23 +299,18 @@ var registerModal = new tingle.modal({
 
 registerModal.setContent(`
     <p class="login__header font-heading-2">Register</p>
-    <div class="login__form-user">
-        <img class="login__form-user-icon" src="https://image.flaticon.com/icons/svg/149/149452.svg">
-        <input class="register__form-user-input register-input-name" placeholder="user name" type="text" required=""/>
-    </div>
-    <div class="login__form-password">
-        <img class="login__form-password-icon" src="https://image.flaticon.com/icons/svg/481/481195.svg">
-        <input class="register__form-password-input register-input-password" type="password" placeholder="password" type="text" required=""/>
-    </div>
+    <form method="post" id="register-form">
+        <div class="login__form-user">
+            <img class="login__form-user-icon" src="https://image.flaticon.com/icons/svg/149/149452.svg">
+            <input class="login__form-user-input register-input-name" name="user" placeholder="user name" type="text" required=""/>
+        </div>
+        <div class="login__form-password">
+            <img class="login__form-password-icon" src="https://image.flaticon.com/icons/svg/481/481195.svg">
+            <input class="login__form-password-input register-input-password" name="pass" type="password" placeholder="password" type="text" required=""/>
+        </div>
+        <button type="submit" class="login__form-submit" name="register-submit" id="register_button">Register</button>
+    </form>
 `);
-
-registerModal.addFooterBtn('Close', 'tingle-btn tingle-btn--danger', function() {
-    registerModal.close();
-});
-
-registerModal.addFooterBtn('Register', 'tingle-btn tingle-btn--primary', function() {
-    registerModal.close();
-});
 
 document.querySelector('#register').addEventListener('click', function() {
     registerModal.open()
