@@ -18,7 +18,7 @@ if (isset($_POST['login-submit'])) {
             $_SESSION['user'] = $user;
             header('Location: index.php');
         } else {
-            
+            // login failed
         }
     }
 }
@@ -29,31 +29,26 @@ if (isset($_POST['logout'])) {
     header('Location: index.php');
 }
 
-error_log('0');
+//register
 if (isset($_POST['register-submit'])) {
-    error_log('1');
     $user = mysqli_real_escape_string($con, $_POST['user']);
     $pass = mysqli_real_escape_string($con, $_POST['pass']);
 
     if ($user != "" && $pass != "") {
-        error_log('2');
         $user_check_query = "SELECT * FROM users WHERE user='$user' LIMIT 1";
         $result = mysqli_fetch_assoc(mysqli_query($con, $user_check_query));
         
         if ($result) { // if user exists
-            error_log('3');
-            array_push($errors, "Username already exists");
+            // array_push($errors, "Username already exists");
         } else {
-            error_log('4');
-
             $query = "INSERT INTO users (user, pass) 
                       VALUES('$user', '$pass')";
+
             mysqli_query($con, $query);
 
             $_SESSION['user'] = $user;
             header('location: index.php');
         }
-            
     }
 }
 
