@@ -24,7 +24,7 @@ body {
 }
 
 .welcome {
-    background: url(./hero-splash.png) no-repeat center center fixed; 
+    background: url(../assets/hero-splash.png) no-repeat center center fixed; 
     background-size: cover;
     background-position: bottom 150px left 0;
 
@@ -92,6 +92,72 @@ body {
 
 .welcome__sub-header {
     margin-top: 15px;
+}
+
+.login-modal .tingle-modal-box {
+    width: 40%;
+}
+
+.tingle-btn--primary {
+    background-color: #25bb36 !important;
+}
+
+.login-modal .tingle-modal-box__content {
+    padding: 2rem;
+}
+
+.login-modal .tingle-btn {
+    border-radius: 10px;
+}
+
+.login__header {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #25bb36;
+}
+
+.login__form-user {
+    margin-top: 5px;
+}
+
+.login__form-user-icon {
+    width: 40px;
+    margin-right: 5px;
+    position: relative;
+    top: -6px;
+}
+
+.login__form-user-input {
+    width: calc(100% - 55px);
+    border: 0;
+    border-bottom: 1px solid #25bb36;
+    margin-top: 30px;
+}
+
+.login__form-password-icon {
+    width: 40px;
+    margin-right: 5px;
+    position: relative;
+    top: -6px;
+}
+
+.login__form-password-input {
+    width: calc(100% - 55px);
+    border: 0;
+    border-bottom: 1px solid #25bb36;
+    margin-top: 30px;
+}
+
+.login__form-submit {
+    width: 100%;
+    margin-top: 19px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .welcome__form {
